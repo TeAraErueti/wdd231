@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --p-color: #181616;
+    --s-color: #8f1a1a;
+    --ptext-color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inter", sans-serif;
+}
+
+p,
+a {
+    font-family: "Inter", sans-serif;
+    ;
+}
+
+body {
+    text-align: center;
+}
+
+#newzealand {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#courseWork,
+#country,
+#certificate {
+    margin: 20px;
+}
+
+#courseWork h2,
+#country h2,
+#certificate h2 {
+    background-color: var(--s-color);
+    color: var(--ptext-color);
+    padding: 1rem;
+}
+
+#certificate #courseTags {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#certificate #courseTags a {
+    background-color: var(--p-color);
+    color: var(--ptext-color);
+    margin: 10px;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#certificate #courseTags a:hover {
+    background-color: var(--s-color);
+}
+
+.completed,
+.incomplete {
+    margin: 20px;
+    padding: 0.5rem;
+}
+
+.completed {
+    background-color: rgb(8, 61, 8);
+    color: var(--ptext-color);
+}
+
+.incomplete {
+    background-color: rgb(226, 22, 22);
+    color: var(--ptext-color);
+}
+
+#totalCredits {
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--s-color);
+    color: var(--ptext-color);
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+}
+
+header {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--p-color);
+    color: var(--ptext-color);
+    font-size: 0.9rem;
+}
+
+header div h1,
+header div img {
+    margin: auto;
+}
+
+#profile {
+    padding: 0.9rem;
+    border-radius: 20%;
+}
+
+header div {
+    display: flex;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu {
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--ptext-color);
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    color: var(--ptext-color);
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1.25rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: var(--ptext-color);
+    background-color: var(--s-color);
+}
+
+.navigation a.active {
+    font-weight: bold;
+    border-bottom: 4px solid #8f1a1a;
+    font-style: italic;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.hide-header h1 {
+    display: none;
+}

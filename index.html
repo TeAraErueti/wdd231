@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Ara Erueti - Home Page</title>
+    <meta name="description" content="Te Ara Erueti's Home Page WDD231- Web Frontend Development I week 1 assignment">
+    <meta name="author" content="Te Ara Erueti">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="profile" src="images/profile.webp" alt="Te Ara Erueti" width="90" height="110" loading="lazy">
+            <h1>Te Ara Erueti</h1>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a id="home" href="#/">Home</a></li>
+                <li><a id="chamber" href="#/">Chamber</a></li>
+                <li><a href="https://github.com/TeAraErueti">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/tearaerueti/">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <a id="menu" href="#" aria-label="Open Menu"></a>
+    </header>
+    <main>
+        <section id="courseWork">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section id="country">
+            <h2>New Zealand</h2>
+            <br>
+            <picture id="waikato">
+                <source srcset="images/nz-medium.webp" media="(min-width:650px)">
+                <img src="images/nz-small.webp" alt="nz beach" loading="lazy" width="300" height="175">
+            </picture>
+            <p>New Zealand Beach</p>
+        </section>
+
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="courseTags">
+                <a href="#" id="all">All</a>
+                <a href="#" id="cse">CSE</a>
+                <a href="#" id="wdd">WDD</a>
+            </div>
+
+            <div id="courses"></div>
+            <div id="totalCredits"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &clubs; Te Ara Erueti &clubs; Waikato, New Zealand</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
