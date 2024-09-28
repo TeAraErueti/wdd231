@@ -8,7 +8,7 @@ hamButton.addEventListener("click", () => {
     header.classList.toggle("hide-header");
 });
 
-const currentPage = window.location.href.split('/').pop();
+/*const currentPage = window.location.href.split('/').pop();
 const navLinks = document.querySelectorAll(".navigation a");
 
 navLinks.forEach(link => {
@@ -16,7 +16,7 @@ navLinks.forEach(link => {
     if (linkPage === currentPage) {
         link.classList.add("active");
     }
-});
+});*/
 
 
 const courses = [
