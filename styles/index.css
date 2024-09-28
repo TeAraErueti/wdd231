@@ -129,6 +129,13 @@ header div {
     cursor: pointer;
 }
 
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
 
 .navigation {
     list-style: none;
