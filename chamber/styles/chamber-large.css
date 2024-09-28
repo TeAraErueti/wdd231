@@ -12,9 +12,7 @@
     .list section p.phone {
         text-align: center;
     }
-}
 
-@media only screen and (min-width: 38rem) {
     header {
         text-align: center;
         display: flex;
