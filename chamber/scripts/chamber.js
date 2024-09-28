@@ -62,16 +62,3 @@ listButton.addEventListener("click", () => {
 
     getCompaniesData(directoryJSON);
 });
-
-const menuElement = document.querySelector("#navButton");
-const navElement = document.querySelector("#animation");
-
-menuElement.addEventListener("click", () => {
-    navElement.classList.toggle("open");
-    menuElement.classList.toggle("open");
-})
-
-const currentYear = new Date().getFullYear();
-console.log(currentYear);
-document.getElementById("currentyear").innerText = currentYear;
-document.getElementById('lastModified').innerText = document.lastModified;
