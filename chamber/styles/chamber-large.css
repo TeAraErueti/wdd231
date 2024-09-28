@@ -13,3 +13,52 @@
         text-align: center;
     }
 }
+
+@media only screen and (min-width: 38rem) {
+    header {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    header div p,
+    header div h2 {
+        padding-bottom: 5px;
+    }
+
+    header img {
+        padding-top: 10px;
+    }
+
+    header a {
+        font-weight: 700;
+        color: rgb(240, 248, 255);
+    }
+
+    #navButton {
+        display: none;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+        padding: 1rem;
+    }
+
+    footer {
+        display: grid;
+        align-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
