@@ -1,0 +1,182 @@
+:root {
+    --p-bcolor: #142712;
+    --s1-bcolor: #75a51bf3;
+    --t-color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inter", sans-serif;
+}
+
+p,
+a {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+#toggleView {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#gridView,
+#listView {
+    margin: 0 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+#gridView:hover,
+#listView:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--s1-bcolor);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.grid img {
+    border: 1px solid var(--p-bcolor);
+    box-shadow: 0 0 10px #333;
+}
+
+.grid section>* {
+    margin: 1rem;
+}
+
+.list,
+.grid {
+    margin: 20px;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h2 {
+    font-size: 1rem;
+}
+
+.list section {
+    display: block;
+}
+
+.list section:nth-child(even) {
+    background-color: rgba(237, 245, 245, 0.849);
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+    background-color: var(--s1-bcolor);
+}
+
+header div p,
+header div h2 {
+    margin: 2px;
+}
+
+header img,
+header div {
+    margin-left: 10px;
+}
+
+nav {
+    background-color: var(--p-bcolor);
+}
+
+#navButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--p-bcolor);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
+}
+
+#navButton::before {
+    content: "\2630";
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--t-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+ul.menuLinks a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+li.active a {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul.menuLinks {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#navButton.open::before {
+    content: "X";
+}
+
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+footer {
+    background-color: var(--p-bcolor);
+    color: var(--t-color);
+    padding: 1rem;
+    margin: auto;
+    margin-top: 100px;
+}
+
+footer div {
+    margin-left: 2rem;
+}

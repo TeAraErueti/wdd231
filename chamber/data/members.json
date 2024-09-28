@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Hamilton Airport",
+            "address": "Airport Road, RD2, Hamilton 3282",
+            "phone": "07 848 9027",
+            "website": "https://www.hamiltonairport.co.nz/",
+            "image": "hamilton-airport.webp",
+            "membership_level": "Gold",
+            "other_information": "Specializes in airline services within New Zealand and international travel."
+        },
+        {
+            "name": "Wintec",
+            "address": "A Block, Gate 3, Tristram Street, Hamilton",
+            "phone": "0800 294 6832",
+            "website": "https://www.wintec.ac.nz/",
+            "image": "logo-wintec.webp",
+            "membership_level": "Gold",
+            "other_information": "Educational institute available to adults and youth offering over 130 courses and qualifications."
+        },
+        {
+            "name": "Kiwibank Te Rapa",
+            "address": "Shop 105, The Base, Te Rapa, Hamilton, 3200",
+            "phone": "0800 11 33 55",
+            "website": "https://www.kiwibank.co.nz",
+            "image": "kiwibank-icon.webp",
+            "membership_level": "Silver",
+            "other_information": "New Zealand owned bank that offers a variety of banking services, including financial advice."
+        },
+        {
+            "name": "University of Waikato",
+            "address": "Gate 1, Knighton Road, Hamilton 3240",
+            "phone": "0800 924 528",
+            "website": "https://www.waikato.ac.nz/",
+            "image": "uow-logo.webp",
+            "membership_level": "Gold",
+            "other_information": "Waikato based education institute that offers a variety of courses and services, including scholarships, accommodation, and student support."
+        },
+        {
+            "name": "Trust Waikato",
+            "address": "4 Little London Lane, Hamilton 3204",
+            "phone": "07 838 2660",
+            "website": "https://trustwaikato.co.nz/",
+            "image": "trust-waikato.webp",
+            "membership_level": "Member",
+            "other_information": "Trust Waikato is a community trust that grants to community groups in the Waikato region."
+        },
+        {
+            "name": "Fosters",
+            "address": "181 Arthur Porter Drive, Te Rapa, Hamilton 3200",
+            "phone": "07 849 3849",
+            "website": "https://www.fosters.co.nz/",
+            "image": "fosters.webp",
+            "membership_level": "Silver",
+            "other_information": "Fosters provide a complete commercial property service - property development, design and build construction, engineering for bespoke requirements and property maintainenance."
+        },
+        {
+            "name": "Waikato Rugby",
+            "address": "128 Seddon Road Hamilton Waikato 3204",
+            "phone": "07 839 5675",
+            "website": "www.mooloo.co.nz",
+            "image": "waikato-rugby.webp",
+            "membership_level": "Member",
+            "other_information": "Waikato Rugby is the governing body of rugby union sport for the Waikato region."
+        }
+    ]
+}
