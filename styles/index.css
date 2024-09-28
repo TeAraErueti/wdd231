@@ -134,7 +134,7 @@ header div {
 }
 
 .active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
+	content: "📍";  
 }
 
 .navigation {
