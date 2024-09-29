@@ -1,7 +1,7 @@
 :root {
     --p-color: #142712;
     --s-color: #75a51bf3;
-    --t-color: white;
+    --t-color: rgba(255, 255, 255, 0.932);
 }
 
 h1,
@@ -137,11 +137,11 @@ ul.menuLinks li a {
 }
 
 ul.menuLinks a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(2, 2, 2, 0.849);
 }
 
 li.active a {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
 ul.menuLinks {
