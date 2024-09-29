@@ -140,8 +140,8 @@ ul.menuLinks a:hover {
     background-color: rgba(2, 2, 2, 0.849);
 }
 
-li.active a {
-    background-color: rgba(0, 0, 0, 0.37);
+li.active a::before  {    
+    content: "📍";      
 }
 
 ul.menuLinks {
