@@ -1,6 +1,6 @@
 :root {
-    --p-bcolor: #142712;
-    --s1-bcolor: #75a51bf3;
+    --p-color: #142712;
+    --s-color: #75a51bf3;
     --t-color: white;
 }
 
@@ -36,14 +36,14 @@ body {
 
 #gridView:hover,
 #listView:hover {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0e8;
     transition: background-color 0.3s;
 }
 
 section {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: var(--s1-bcolor);
+    background-color: var(--s-color);
 }
 
 .grid {
@@ -58,8 +58,8 @@ section {
 }
 
 .grid img {
-    border: 1px solid var(--p-bcolor);
-    box-shadow: 0 0 10px #333;
+    border: 1px solid var(--p-color);
+    box-shadow: 0 0 10px #5c5a5a;
 }
 
 .grid section>* {
@@ -68,7 +68,7 @@ section {
 
 .list,
 .grid {
-    margin: 20px;
+    margin: 21px;
 }
 
 .list section img {
@@ -96,7 +96,7 @@ header {
     display: grid;
     grid-template-columns: 44px auto 44px;
     align-items: end;
-    background-color: var(--s1-bcolor);
+    background-color: var(--s-color);
 }
 
 header div p,
@@ -110,14 +110,14 @@ header div {
 }
 
 nav {
-    background-color: var(--p-bcolor);
+    background-color: var(--p-color);
 }
 
 #navButton {
     font-size: 2rem;
     background: none;
     border: none;
-    color: var(--p-bcolor);
+    color: var(--p-color);
     cursor: pointer;
     width: 100%;
     text-align: left;
@@ -170,11 +170,11 @@ nav.open {
 }
 
 footer {
-    background-color: var(--p-bcolor);
+    background-color: var(--p-color);
     color: var(--t-color);
     padding: 1rem;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 footer div {
