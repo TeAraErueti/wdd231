@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Te Ara Erueti - Chamber Directory</title>
+    <title>Te Ara Erueti - Chamber Home Page</title>
     <meta name="description"
-        content="Te Ara Erueti's Chamber Directory WDD231- Web Frontend Development I week 2 assignment">
+        content="Te Ara Erueti's Chamber Home Page WDD231- Web Frontend Development I week 3 assignment">
     <meta name="author" content="Te Ara Erueti">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/chamber.css">
-    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
 
 
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/date.js" defer></script>
 
@@ -26,9 +26,9 @@
 
     <link rel="icon" href="directory.ico">
 
-    <meta property="og:title" content="Te Ara Erueti Chamber Directory">
+    <meta property="og:title" content="Waikato Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tearaerueti.github.io/wdd231/directory.html">
+    <meta property="og:url" content="https://tearaerueti.github.io/wdd231/chamber/index.html">
     <meta property="og:image" content="https://tearaerueti.github.io/wdd231/chamber/images/chamber-meta.avif">
     <meta property="og:description" content="Te Ara's chamber of commerce directory for the Waikato Region.">
     <meta name="twitter:card" content="summary">
@@ -51,25 +51,52 @@
 
     <nav id="animation">
         <ul class="menuLinks">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">Business Directory</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Business Directory</h1>
-        <div id="toggleView">
-            <button id="gridView" type="button">
-                <img src="images/grid.png" alt="toggle to grid view" width="16" height="16" loading="lazy">
-            </button>
-            <button id="listView" type="button">
-                <img src="images/list.png" alt="toggle to list view" width="16" height="16" loading="lazy">
-            </button>
+        <div id="homeGrid">
+            <div id="hero">
+                <picture>
+                    <source srcset="images/hero-large.jpg" media="(min-width:38rem)">
+                    <source srcset="images/hero-medium.jpg" media="(min-width:28rem)">
+                    <img src="images/hero-small.jpg" alt="Waikato river" width="768" height="960" loading="lazy">
+                </picture>
+            </div>
+            <div id="buttonContainer">
+                <button id="join" aria-label="Join Us!">Join Us!</button>
+            </div>
+
+            <div id="events">
+                <h3>Events</h3>
+                <p>Hamilton Lake Scavenger Hunt</p>
+                <p>Waikato Home & Garden Show</p>
+                <p>Curling Fun at Chartwell</p>
+                <p>Good Vibes Concert</p>
+                <p>Tamahere Markets</p>
+            </div>
+
+            <div id="currentWeather">
+                <h3>Current Weather</h3>
+                <div id="weatherdiv">
+                    <div id="iconDiv"></div>
+                    <div id="textDiv"></div>
+                </div>
+
+            </div>
+
+            <div id="forecast">
+                <h3>Weather forecast</h3>
+            </div>
+
         </div>
+
         <div>
-            <article id="cards" class="list">
+            <article id="cards">
             </article>
         </div>
     </main>

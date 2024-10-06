@@ -6,7 +6,7 @@
             "phone": "07 848 9027",
             "website": "https://www.hamiltonairport.co.nz/",
             "image": "hamilton-airport.webp",
-            "membership_level": "Gold",
+            "membership_level": 3,
             "other_information": "Specializes in airline services within New Zealand and international travel."
         },
         {
@@ -15,7 +15,7 @@
             "phone": "0800 294 6832",
             "website": "https://www.wintec.ac.nz/",
             "image": "logo-wintec.webp",
-            "membership_level": "Gold",
+            "membership_level": 3,
             "other_information": "Educational institute available to adults and youth offering over 130 courses and qualifications."
         },
         {
@@ -24,7 +24,7 @@
             "phone": "0800 11 33 55",
             "website": "https://www.kiwibank.co.nz",
             "image": "kiwibank-icon.webp",
-            "membership_level": "Silver",
+            "membership_level": 2,
             "other_information": "New Zealand owned bank that offers a variety of banking services, including financial advice."
         },
         {
@@ -33,7 +33,7 @@
             "phone": "0800 924 528",
             "website": "https://www.waikato.ac.nz/",
             "image": "uow-logo.webp",
-            "membership_level": "Gold",
+            "membership_level": 3,
             "other_information": "Waikato based education institute that offers a variety of courses and services, including scholarships, accommodation, and student support."
         },
         {
@@ -42,7 +42,7 @@
             "phone": "07 838 2660",
             "website": "https://trustwaikato.co.nz/",
             "image": "trust-waikato.webp",
-            "membership_level": "Member",
+            "membership_level": 1,
             "other_information": "Trust Waikato is a community trust that grants to community groups in the Waikato region."
         },
         {
@@ -51,7 +51,7 @@
             "phone": "07 849 3849",
             "website": "https://www.fosters.co.nz/",
             "image": "fosters.webp",
-            "membership_level": "Silver",
+            "membership_level": 2,
             "other_information": "Fosters provide a complete commercial property service - property development, design and build construction, engineering for bespoke requirements and property maintainenance."
         },
         {
@@ -60,7 +60,7 @@
             "phone": "07 839 5675",
             "website": "www.mooloo.co.nz",
             "image": "waikato-rugby.webp",
-            "membership_level": "Member",
+            "membership_level": 1,
             "other_information": "Waikato Rugby is the governing body of rugby union sport for the Waikato region."
         }
     ]
