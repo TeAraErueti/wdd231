@@ -42,6 +42,23 @@ body {
     padding: 1rem;
 }
 
+#certificate button, 
+#certificate a {
+    animation: slideIn 3s;
+}
+
+#certificate button.completed:hover {
+    background-color: rgb(10, 73, 4);
+}
+
+#certificate button.incomplete:hover {
+    background-color: rgb(58, 2, 2);
+}
+
+#certificate button.closeModal {
+    animation: none;
+}
+
 #certificate #courseTags {
     display: flex;
     margin: auto;
@@ -61,6 +78,33 @@ body {
 
 #certificate #courseTags a:hover {
     background-color: var(--s-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+#course-details {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+}
+
+::backdrop {
+    background-color: rgba(0,0,0,0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .completed,
