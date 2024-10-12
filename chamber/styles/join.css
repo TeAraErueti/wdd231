@@ -66,7 +66,7 @@ select {
 }
 
 input:required {
-    border-left-color: rgb(255, 46, 46);
+    border-left-color: rgb(247, 18, 18);
 }
 
 input:focus {
@@ -75,7 +75,7 @@ input:focus {
 }
 
 input:required:valid {
-    border-left-color: lawngreen;
+    border-left-color: rgb(137, 247, 28);
 }
 
 input[type=submit] {
