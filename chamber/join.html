@@ -59,46 +59,52 @@
     </nav>
 
     <main>
-        <div id="joinUsForm">
-            <h2>Membership Application Form</h2>
-            <form method="GET" action="thankyou.html" class="form">
-                <label>First Name: <input type="text" name="firstName" required autocomplete="given-name"
-                        title="Your First Name"></label>
-                <label>Last Name: <input type="text" name="lastName" required autocomplete="family-name"
-                        title="Your Last Name"></label>
-                <label id="orgTitle">Organizational Title <input type="text" name="title"
-                        autocomplete="organization-title" title="Your Organization Title" pattern="^[A-Za-z\s\-]{7,}$"
-                        placeholder="Enter title (min 7 characters)"></label>
-                <label>E-mail: <input type="email" name="email" required placeholder="someone@gmail.com"
-                        autocomplete="email"></label>
-                <label>Phone Number: <input type="tel" name="phone" required placeholder="962-555-148"
-                        autocomplete="tel"></label>
-                <label>Organization Name: <input type="text" name="OrgName" required
-                        autocomplete="organization"></label>
-                <label>Organization's description <textarea name="orgDescription" title="description"
-                        id="description"></textarea></label>
-
-
-                <h3>Select Membership Level</h3>
-                <div>
-                    <label><input type="radio" name="mLevel" value="Non Profit" required> Non Profit Membership</label>
-                    <label><input type="radio" name="mLevel" value="Bronze"> Bronze Membership</label>
-                    <label><input type="radio" name="mLevel" value="Silver"> Silver Membership</label>
-                    <label><input type="radio" name="mLevel" value="Gold"> Gold Membership</label>
-                </div>
-
-                <input type="hidden" name="timestamp" id="timestamp">
-
-                <input type="submit" value="Join Waikato Chamber of Commerce!">
-            </form>
+        <div id="join">
+            <h1>Waikato Chamber of Commerce Join</h1>
         </div>
 
-        <div id="membershipLevels">
-            <h2>Membership Levels</h2>
-            <section id="levels"></section>
-            <dialog id="levelsInfo"></dialog>
-        </div>
+        <div id="box">
+            <div id="joinUsForm">
+                <h2>Membership Application Form</h2>
+                <form method="GET" action="thankyou.html" class="form">
+                    <label>First Name: <input type="text" name="firstName" required autocomplete="given-name"
+                            title="Your First Name"></label>
+                    <label>Last Name: <input type="text" name="lastName" required autocomplete="family-name"
+                            title="Your Last Name"></label>
+                    <label id="orgTitle">Organizational Title <input type="text" name="title"
+                            autocomplete="organization-title" title="Your Organization Title"
+                            pattern="^[A-Za-z\s\-]{7,}$" placeholder="Enter title (min 7 characters)"></label>
+                    <label>E-mail: <input type="email" name="email" required placeholder="someone@gmail.com"
+                            autocomplete="email"></label>
+                    <label>Phone Number: <input type="tel" name="phone" required placeholder="962-555-148"
+                            autocomplete="tel"></label>
+                    <label>Organization Name: <input type="text" name="OrgName" required
+                            autocomplete="organization"></label>
+                    <label>Organization's description <textarea name="orgDescription" title="description"
+                            id="description"></textarea></label>
 
+
+                    <h3>Select Membership Level</h3>
+                    <div>
+                        <label><input type="radio" name="mLevel" value="Non Profit" required> Non Profit
+                            Membership</label>
+                        <label><input type="radio" name="mLevel" value="Bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="mLevel" value="Silver"> Silver Membership</label>
+                        <label><input type="radio" name="mLevel" value="Gold"> Gold Membership</label>
+                    </div>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Join Waikato Chamber of Commerce!">
+                </form>
+            </div>
+
+            <div id="membershipLevels">
+                <h2>Membership Levels</h2>
+                <section id="levels"></section>
+                <dialog id="levelsInfo"></dialog>
+            </div>
+        </div>
     </main>
 
     <footer>

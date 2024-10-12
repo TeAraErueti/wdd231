@@ -11,7 +11,13 @@ h3 {
 }
 
 h1 {
-    display: block;
+    text-align:center;
+}
+
+#join{
+    background-color: rgba(89, 153, 110, 0.432);
+    display:block;
+    margin-top: 2%;
 }
 
 p,
