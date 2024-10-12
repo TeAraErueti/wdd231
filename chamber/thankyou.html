@@ -4,17 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Te Ara Erueti - Chamber Directory</title>
+    <title>Te Ara Erueti - Chamber Thank You Page</title>
     <meta name="description"
-        content="Te Ara Erueti's Chamber Directory WDD231- Web Frontend Development I week 2 assignment">
+        content="Te Ara Erueti's Chamber Thank You Page WDD231- Web Frontend Development I week 4 assignment">
     <meta name="author" content="Te Ara Erueti">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/chamber.css">
-    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
 
-
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/date.js" defer></script>
 
@@ -26,9 +24,9 @@
 
     <link rel="icon" href="directory.ico">
 
-    <meta property="og:title" content="Te Ara Erueti Chamber Directory">
+    <meta property="og:title" content="Waikato Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tearaerueti.github.io/wdd231/directory.html">
+    <meta property="og:url" content="https://tearaerueti.github.io/wdd231/chamber/join.html">
     <meta property="og:image" content="https://tearaerueti.github.io/wdd231/chamber/images/chamber-meta.avif">
     <meta property="og:description" content="Te Ara's chamber of commerce directory for the Waikato Region.">
     <meta name="twitter:card" content="summary">
@@ -52,26 +50,17 @@
     <nav id="animation">
         <ul class="menuLinks">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">Business Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li class="active"><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Business Directory</h1>
-        <div id="toggleView">
-            <button id="gridView" type="button">
-                <img src="images/grid.png" alt="toggle to grid view" width="16" height="16" loading="lazy">
-            </button>
-            <button id="listView" type="button">
-                <img src="images/list.png" alt="toggle to list view" width="16" height="16" loading="lazy">
-            </button>
-        </div>
-        <div>
-            <article id="cards" class="list">
-            </article>
-        </div>
+        <h1>Thank you for joining the Waikato Chamber of Commerce!</h1>
+        <h2>We will contact you soon...</h2>
+        <h3>Your information:</h3>
+        <div id="showData"></div>
     </main>
 
     <footer>

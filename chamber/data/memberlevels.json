@@ -1,0 +1,54 @@
+{
+    "membershipLevels": [
+        {
+            "level": "Non Profit Organization",
+            "levelName": "NP",
+            "cost": 0,
+            "benefits": [
+                "Access to community & networking events",
+                "Basic training sessions & mentoring",
+                "Listing in business directory"
+            ]
+        },
+        {
+            "level": "Bronze",
+            "levelName": "B",
+            "cost": 350,
+            "benefits": [
+                "Access to community & networking events",
+                "Enhanced business directory listing",
+                "Discount on event tickets",
+                "Discounts for partnered businesses & services",
+                "Training sessions, mentoring and advocacy"
+            ]
+        },
+        {
+            "level": "Silver",
+            "levelName": "S",
+            "cost": 700,
+            "benefits": [
+                "All Bronze-level benefits",
+                "Priority business directory listing",
+                "Access to premier events",
+                "Discounts on advertising and advocacy",
+                "Participation in special training and webinars",
+                "Spotlight on home page (randomly featured)"
+            ]
+        },
+        {
+            "level": "Gold",
+            "levelName": "G",
+            "cost": 1400,
+            "benefits": [
+                "All Silver-level benefits",
+                "Premium business directory listing",
+                "Guaranteed spotlight on home page",
+                "Exclusive advertising opportunities",
+                "Free event tickets for major events",
+                "First access to sponsorships",
+                "Invitations to VIP events",
+                "Discounted legal, health, & insurance services"
+            ]
+        }
+    ]
+}
