@@ -11,12 +11,12 @@ h3 {
 }
 
 h1 {
-    text-align:center;
+    text-align: center;
 }
 
-#join{
+#join {
     background-color: rgba(89, 153, 110, 0.432);
-    display:block;
+    display: block;
     margin-top: 2%;
 }
 
@@ -101,7 +101,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: rgb(203, 248, 1);
     border: 2px solid rgb(8, 4, 46);
-    color:rgb(22, 13, 71);
+    color: rgb(22, 13, 71);
     transform: scale(1.05);
 }
 
