@@ -1,0 +1,178 @@
+:root {
+    --p-color: #142712;
+    --s-color: #75a51bf3;
+    --t-color: rgba(255, 255, 255, 0.932);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inter", "Open-Sans";
+}
+
+h1 {
+    text-align: center;
+}
+
+p,
+a {
+    font-family: "Inter", "Open-Sans";
+}
+
+body {
+    text-align: center;
+    font-family: "Inter", "Open-Sans";
+}
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+    background-color: var(--s-color);
+}
+
+header div p,
+header div h2 {
+    margin: 2px;
+}
+
+header img,
+header div {
+    margin-left: 10px;
+}
+
+nav {
+    background-color: var(--p-color);
+}
+
+#navButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--p-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+#navButton::before {
+    content: "\2630";
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--t-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+ul.menuLinks a:hover {
+    background-color: rgba(2, 2, 2, 0.849);
+}
+
+li.active a::before {
+    content: "📍";
+}
+
+ul.menuLinks {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#navButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+    text-align: center;
+}
+
+#cards section {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--s-color);
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards img {
+    width: auto;
+    height: 100%;
+}
+
+#discover-grid {
+    background-color: rgba(217, 238, 234, 0.842);
+
+}
+
+.sidebar .card {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar h2,
+.sidebar h3 {
+    text-align: center;
+}
+
+.imagesdiv {
+    margin: 15px;
+}
+
+.imagesdiv h3 {
+    text-align: center;
+    color: rgb(78, 20, 12) ;
+    margin-top: 0px;
+}
+
+footer {
+    background-color: var(--p-color);
+    color: var(--t-color);
+    padding: 1rem;
+    margin: auto;
+    margin-top: 90px;
+}
+
+footer div {
+    margin-left: 2rem;
+}
