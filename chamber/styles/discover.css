@@ -104,9 +104,6 @@ img {
     height: auto;
 }
 
-
-
-
 #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -153,6 +150,10 @@ section {
 .sidebar h2,
 .sidebar h3 {
     text-align: center;
+}
+
+.card li{
+    font-weight: 600;
 }
 
 .imagesdiv {
