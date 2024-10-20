@@ -112,6 +112,10 @@ img {
     text-align: center;
 }
 
+.card p{
+    font-weight:500;
+}
+
 #cards section {
     min-height: 300px;
     display: flex;
