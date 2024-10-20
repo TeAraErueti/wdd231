@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Ara Erueti - Chamber Discover Page</title>
+    <meta name="description"
+        content="Te Ara Erueti's Chamber Discover Page WDD231- Web Frontend Development I week 5 assignment">
+    <meta name="author" content="Te Ara Erueti">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
+
+
+    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="directory.ico">
+
+    <meta property="og:title" content="Waikato Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tearaerueti.github.io/wdd231/chamber/discover.html">
+    <meta property="og:image" content="https://tearaerueti.github.io/wdd231/chamber/images/chamber-meta.avif">
+    <meta property="og:description" content="Te Ara's chamber of commerce directory for the Waikato Region.">
+    <meta name="twitter:card" content="summary">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/dheader-large.webp" media="(min-width:38rem)">
+            <img src="images/d-header.webp" alt="Chamber of Commerce Directory Icon" width="40" height="40"
+                loading="lazy">
+        </picture>
+
+        <div>
+            <h2>Waikato</h2>
+            <p>Chamber of Commerce</p>
+        </div>
+        <button id="navButton" type="button" aria-label="Menu"></button>
+    </header>
+
+    <nav id="animation">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main id="discover-grid">
+        <div class="sidebar">
+
+            <h1>Discover Page</h1>
+
+            <section class="card">
+                <h2 id="message"></h2>
+            </section>
+
+            <section class="card">
+                <h2>About Waikato</h2>
+                <p>
+                    The Waikato region is located in the upper North Island of New Zealand.
+                    It encompasses a diverse range of landscapes, stretching from the Coromandel Peninsula in the north
+                    to the north-eastern slopes of Mount Ruapehu in the south.
+                    The region spans from the west coast, through the Waikato and Hauraki areas, to the Coromandel
+                    Peninsula on the east coast.
+                    It is bordered by Auckland to the north, Bay of Plenty to the east, Hawke's Bay to the southeast,
+                    and Manawatū-Whanganui and Taranaki to the south.
+                    The Waikato River catchment broadly defines its extent, with other major river catchments including
+                    those of Waihou, Piako, Awakino, and Mokau rivers.
+                    The Waikato region is governed by the Waikato Regional Council and includes all or part of eleven
+                    territorial authorities—the most of any region in New Zealand.
+                    These are Taupō District (part), Waikato District, Waitomo District (part), Thames-Coromandel
+                    District, Ōtorohanga District, South Waikato District, Matamata-Piako District, Waipa District,
+                    Hauraki District, Rotorua Lakes District (part), and Hamilton City.
+                    As of June 2023, the population of the Waikato region is estimated to be around 522,600 people. The
+                    population density is about 22 people per km².
+                    The demographic composition includes a mix of ethnicities with 71.7% identifying as European
+                    (Pākehā), 25.2% as Māori, and smaller percentages for Pasifika and Asian communities.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>Economy</h2>
+                <p>
+                    The Waikato region, located in the North Island of New Zealand, is recognized as one of the most
+                    productive areas in the country.
+                    Its economy is diverse and serves as a springboard for innovation and industry. The region's
+                    economic landscape is characterized by a blend of primary industries, manufacturing, services, and
+                    emerging sectors such as aquaculture.
+                    The economy of Waikato is heavily reliant on agriculture, particularly dairy farming which has been
+                    a cornerstone since the late 19th century.
+                    In recent years, dairy processing has become a major industry within the region.
+                    The subnational GDP was estimated at NZ$25.84 billion in March 2019, contributing about 8.5% to New
+                    Zealand's national GDP.
+                </p>
+
+                <h2>Climate</h2>
+                <p>
+                    The Waikato region in New Zealand exhibits a diverse range of climates due to its varied landscapes.
+                    The climate is influenced by geographical features such as coastal areas, plains, and high-altitude
+                    regions.
+                    This diversity results in distinct climatic characteristics across different parts of the region.
+                    Waikato experiences a mild temperate climate with moderate rainfall ranging from 1200-1600 mm
+                    annually.
+                    Summers are typically drier with temperatures reaching between 22-28 degrees Celsius while winters
+                    see maximum temperatures between 10-16 degrees Celsius.
+                </p>
+
+                <h2>Culture</h2>
+                <p>
+                    The name “Waikato” is derived from the Māori language meaning “flowing water,” specifically
+                    combining “wai” for water and “kato” for the pull of a river current in the sea.
+                    In spoken language, some people refer to it as “the Waikato,” while others do not use “the.”
+                    This variation often reflects different definitions or perceptions of regional boundaries.
+                    The cultural landscape of Waikato is rich due to its Māori heritage and European influences.
+                    The region hosts various events that celebrate this diversity and has a vibrant arts community.
+                </p>
+
+            </section>
+
+            <section class="card">
+                <h2>Waikato University</h2>
+                <picture>
+                    <source srcset="images/uow.jpg" media="(min-width:38rem)">
+                    <img src="images/uow.jpg" alt="Waikato University" loading="lazy" width="150" height="80">
+                </picture>
+                <p>
+                    The University of Waikato opened in 1964 after many years of energetic lobbying by a group of
+                    Hamilton locals, determined to have a university in their city.
+                    To begin with, facilities were sparse, but in early 1965 new buildings were officially opened by
+                    then Governor-General Sir Bernard Fergusson.
+                    Sir Don Llewellyn was the founding Vice-Chancellor.
+                    By the 1980s, Waikato was the fastest-growing university in New Zealand. Computer Science became an
+                    increasingly popular study choice and the thriving Department was elevated to a School of Computing
+                    and Mathematical Sciences in 1987.
+                    The University always had a close relationship with its neighbouring teachers'college and, leading
+                    the way for others to follow, became the first university in New Zealand to combine with its
+                    regional teachers' college.
+                    Through its teaching programmes, the University began to establish a presence in Tauranga.
+
+                    The University of Waikato has a longstanding relationship with the Kīngitanga and Waikato-Tainui,
+                    who are the traditional owners and custodians in the Waikato region.
+                    The University's Hamilton campus is based on land originally inhabited by Ngāti Wairere and Ngāti
+                    Hauā of Tainui.
+                    Much of this land was confiscated in 1864 by the colonial government following the Waikato Land
+                    Wars, an act later found to be in breach of the Treaty of Waitangi.
+                    To redress this, the Crown signed a settlement with Waikato-Tainui in 1995, part of which vested the
+                    land on which the Hamilton campus stands in the title of the first Māori King, Pōtatau Te
+                    Wherowhero, to ensure it could not be alienated.
+                    It is now leased to the University by Waikato-Tainui.
+                    In 1991 Te Rōpū Manukura was formed as a consultative body to the University Council.
+                    It now sits in partnership with the University Council as the Kaitiaki (guardian) of the Treaty of
+                    Waitangi for the University.
+                    Te Rōpū Manukura is currently made up of members from over 20 different iwi within the catchment
+                    area of the University.
+                    In 2009, Kīngitanga Day was established as a way to honour and strengthen the connection between the
+                    University, Kīngitanga, Waikato-Tainui, and many other iwi across the country.
+                    Kīngitanga Day is a community-focused event and is celebrated annually in September.
+                </p>
+
+                <h3>What's on at Waikato University:</h3>
+                <ul>
+                    <li>
+                        Student Centre: Situtated at the Hamilton Campus as a great place for students to study. Student
+                        advisors, computer labs and group study rooms are available to all students.
+                    </li>
+                    <li>
+                        Cafes and Shops: A variety of food shops as well as a stationery shop for resources, clothing,
+                        chemist for prescriptions and technology shop for repairs.
+                    </li>
+                    <li>
+                        Gym & indoor/outdoor facilities: Situated at the Hamilton Campus with a variety of fitness
+                        facilities both indoor and outdoor available all year round.
+                    </li>
+                    <li>
+                        Cultural Events: A variety of events from different cultures are available throughout the year,
+                        both indoor and outdoor.
+                    <li>
+                        Natural Surroundings: Hamilton Campus provides a beautiful lake walk and native plants for
+                        students to enjoy.
+                    </li>
+                    <li>
+                        Library: Available for students to utilise research resources, books, computing services,
+                        database, scholarship and grants, and printing.
+                    </li>
+
+                    <li>
+                        Student Health Centre: provides a variety of student support services including medical and
+                        nursing services, mental health, counselling, social work, violence prevention, and chaplaincy.
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="imagessection">
+
+            <div class="imagesdiv">
+
+                <img src="images/gardens.jpg" alt="Hamilton Gardens" loading="lazy" width="626" height="682">
+                <h3>Hamilton Gardens</h3>
+
+                <img src="images/hobbiton.jpg" alt="Hobbiton Movie Set" loading="lazy" width="640" height="360">
+                <h3>Hobbiton Movie Set</h3>
+
+                <img src="images/bvfalls.jpg" alt="Bridal Veil Falls" loading="lazy" width="598" height="766">
+                <h3>Bridal Veil Falls</h3>
+
+                <img src="images/waikato_stadium.jpg" alt="Waikato Stadium" loading="lazy" width="640" height="480">
+                <h3>Waikato Stadium</h3>
+
+                <img src="images/waikato_museum.jpg" alt="Waikato Museum" loading="lazy" width="1440" height="810">
+                <h3>Waikato Museum</h3>
+
+                <img src="images/lake.jpg" alt="Hamilton Lake" loading="lazy" width="603" height="766">
+                <h3>Hamilton Lake</h3>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p><strong>Waikato Chamber of Commerce</strong></p>
+            <p>1490 Victoria Street</p>
+            <p>Hamilton 3216</p>
+            <p>info@waikatochamber.co.nz</p>
+            <p>0800 645 8793</p>
+        </div>
+
+        <div>
+            <P>WDD231 Project</P>
+            <p>Te Ara Erueti</p>
+            <p>&copy; <span id="currentyear"></span> &clubs; Te Ara Erueti &clubs; Waikato, New Zealand</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
