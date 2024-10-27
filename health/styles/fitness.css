@@ -1,0 +1,294 @@
+:root {
+    --p-color: #41573f;
+    --s-color: #28b686f3;
+    --t-color: rgba(255, 255, 255, 0.932);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inter", "Open-Sans";
+}
+
+h1 {
+    display: block;
+}
+
+p,
+a {
+    font-family: "Inter", "Open-Sans";
+}
+
+body {
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+}
+
+#toggleView {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#gridView,
+#listView {
+    margin: 0 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+#gridView:hover,
+#listView:hover {
+    background-color: #f0f0f0e8;
+    transition: background-color 0.3s;
+}
+
+section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--s-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.grid img {
+    border: 1px solid var(--p-color);
+    box-shadow: 0 0 10px #5c5a5a;
+    margin-top: 10px;
+}
+
+.list,
+.grid {
+    margin: 21px;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h2 {
+    font-size: 1rem;
+}
+
+.list section {
+    display: block;
+}
+
+.list section:nth-child(even) {
+    background-color: rgba(237, 245, 245, 0.849);
+}
+
+#cards button {
+    padding: .3rem;
+    border-radius: .5rem;
+    background-color: rgb(13, 14, 13);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s, transform 0.3s;
+}
+
+#cards button:hover {
+    background-color: rgb(224, 238, 26);
+    border: rgb(141, 129, 129);
+    color: black;
+    transform: scale(1.1);
+}
+
+#closeModal {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#closeModal:hover {
+    color: rgb(14, 13, 13);
+    background-color: #f7e014;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#events ul {
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+#events,
+#currentWeather,
+#forecast {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--p-color);
+    color: var(--t-color);
+    margin: 10px;
+    font-family: "inter", "open-sans";
+}
+
+#events h3,
+#currentWeather h3,
+#forecast h3 {
+    background-color: var(--t-color);
+    color: var(--p-color);
+    font-weight: 900;
+    margin: auto;
+    padding: 1rem;
+}
+
+#currentWeather p {
+    font-weight: bold;
+}
+
+#weatherdiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#iconDiv {
+    grid-column: 1/2;
+    justify-self: auto;
+}
+
+#textDiv {
+    grid-column: 2/3;
+    margin-left: 10px;
+}
+
+#forecast p {
+    margin-left: 50px;
+    margin-right: 50px
+}
+
+#workouts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#workouts img {
+    max-width: 85%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#workouts p {
+    font-weight: 550;
+}
+
+#weights p,
+#yoga p,
+#boxing p {
+    color: black;
+    padding: 10px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+    background-color: var(--s-color);
+}
+
+header div p,
+header div h2 {
+    margin: 10px;
+}
+
+header img,
+header div {
+    margin-left: 10px;
+}
+
+nav {
+    background-color: var(--p-color);
+}
+
+#navButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--p-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
+}
+
+#navButton::before {
+    content: "\2630";
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--t-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+ul.menuLinks a:hover {
+    background-color: rgba(2, 2, 2, 0.849);
+}
+
+li.active a::before {
+    content: "📍";
+}
+
+ul.menuLinks {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#navButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+footer {
+    background-color: var(--p-color);
+    color: var(--t-color);
+    padding: 1rem;
+    margin: auto;
+    margin-top: 90px;
+}
+
+footer div {
+    margin-left: 2rem;
+}

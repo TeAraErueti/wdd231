@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Ara Erueti - Health Home Page</title>
+    <meta name="description" content="Te Ara Erueti's Home Page WDD231- Web Frontend Development I week 6 assignment">
+    <meta name="author" content="Te Ara Erueti">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+
+
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="haw.ico">
+
+    <meta property="og:title" content="Health & Wellbeing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tearaerueti.github.io/wdd231/health/index.html">
+    <meta property="og:image" content="https://tearaerueti.github.io/wdd231/health/images/meta.jpg">
+    <meta property="og:description" content="Te Ara's home page for the Health & Wellbeing website.">
+    <meta name="twitter:card" content="summary">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/icon-large.webp" media="(min-width:38rem)">
+            <img src="images/icon.webp" alt="Health and Wellbeing Directory Icon" width="40" height="40" loading="lazy">
+        </picture>
+
+        <div>
+            <h2>Health & Wellbeing</h2>
+        </div>
+        <button id="navButton" type="button" aria-label="Menu"></button>
+    </header>
+
+    <nav id="animation">
+        <ul class="menuLinks">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="homeGrid">
+            <div id="hero">
+                <picture>
+                    <source srcset="images/hero-large.jpg" media="(min-width:38rem)">
+                    <source srcset="images/hero-medium.jpg" media="(min-width:28rem)">
+                    <img src="images/hero.jpg" alt="two fit ladies doing lunges" loading="lazy" width="640" height="427">
+                </picture>
+                <h1>Home</h1>
+            </div>
+
+            <div id="basic">
+                <h2>Health & Wellbeing</h2>
+                <p id="message"></p>
+            </div>
+
+            <div id="fitness">
+                <img src="images/fithome-small.jpg" alt="lady doing situp exercise" loading="lazy" width="640"
+                    height="427">
+                <h3>Fitness</h3>
+                <p>Come along to learn about some of the most basic fitness moves that will help get you in shape any
+                    time of the year. Whether your fitness goals are beginner to intermediate, we can help tailor a plan
+                    around your fitness goals...</p>
+            </div>
+
+            <div id="nutrition">
+                <img src="images/nuthome.jpg" alt="bowls of nutritious food" loading="lazy" width="640" height="427">
+                <h3>Nutrition</h3>
+                <p>Come and learn about some basic fundamentals of nutrition to improve your lifestyle and wellbeing.
+                    Whether you have dietary requirements or simply looking for alternatives to try, we can tailor meal
+                    plans to suit your needs...</p>
+            </div>
+        </div>
+
+        <div id="cards">
+            <div id="purpose">
+                <img src="images/purpose-small.jpg" alt="team of fit healthy people at gym" loading="lazy" width="640"
+                    height="427">
+                <h2>Purpose</h2>
+                <p>We started back in 2019 when members of our team were collaborating with fitness and nutrition gurus
+                    in these fields of expertise to bring forth "Health & Wellbeing". Our brand emerged in the early
+                    2000's through trial and error to help address common concerns that many people had in our local
+                    community and online platforms. We continued our research and found our niche to bring to you our
+                    passion of nutrition and fitness online. Our chosen platform of online branding has allowed us to
+                    reach out to those in need outside of the Hamilton, New Zealand region. We look forward to working
+                    with you in assisting you in your own nutrition and/or fitness goals for your own health and
+                    wellbeing journey.</p>
+            </div>
+
+            <div id="team">
+                <img src="images/team-small.jpg" alt="group of fit ladies" loading="lazy" width="640" height="427">
+                <h2>Meet the Team</h2>
+                <p>Meet Laura, Ashley, Demi and Michelle! The start up team of our whole brand. A group of mums who met
+                    at their local playgroup and all had a passion to improve their health and wellbeing. Laura is a
+                    profound yoga and pilates instructor with years of experience and her own fitness studio. Ashley is
+                    a licensed nutritionist who has several years of experience working at her local hospital and
+                    clients in her community. Demi has a wide background in health science and fitness along with 7
+                    years of personal training, and Michelle has a background in psychology and work experience in
+                    mental health and wellbeing. Together we have come up with the dream team, along with our workers in
+                    the background. We look forward to working with you in helping you achieve your health and wellbeing
+                    goals.</p>
+            </div>
+
+            <div id="subscribe">
+                <h2>* Subscribe to our Newsletter *</h2>
+                <form method="GET" action="thankyou.html" class="form">
+                    <label>First Name: <input type="text" name="firstName" required autocomplete="given-name"
+                            title="Your First Name"></label>
+                    <label>Last Name: <input type="text" name="lastName" required autocomplete="family-name"
+                            title="Your Last Name"></label>
+                    <label>E-mail: <input type="email" name="email" required placeholder="username@gmail.com"
+                            autocomplete="email"></label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Subscribe Now">
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p><strong>Health & Wellbeing</strong></p>
+            <p>1080 London Street</p>
+            <p>Hamilton 3200</p>
+            <p>info@HAW.co.nz</p>
+            <p>0800 245 873</p>
+        </div>
+
+        <div id="attributions">
+            <a href="attributions.html">
+                <img src="images/attributions.png" alt="icon link to attributions page">
+            </a>
+        </div>
+
+        <div>
+            <P>WDD231 Project</P>
+            <p>Te Ara Erueti</p>
+            <p>&copy; <span id="currentyear"></span> &clubs; Te Ara Erueti &clubs; Waikato, New Zealand</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Ara Erueti - Health Nutrition Page</title>
+    <meta name="description"
+        content="Te Ara Erueti's Nutrition Page WDD231- Web Frontend Development I week 6 assignment">
+    <meta name="author" content="Te Ara Erueti">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/nutrition.css">
+    <link rel="stylesheet" href="styles/nutrition-large.css">
+
+
+    <script src="scripts/nutrition.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="haw.ico">
+
+    <meta property="og:title" content="Health & Wellbeing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tearaerueti.github.io/wdd231/health/nutrition.html">
+    <meta property="og:image" content="https://tearaerueti.github.io/wdd231/health/images/meta.jpg">
+    <meta property="og:description" content="Te Ara's nutrition page for the Health & Wellbeing website.">
+    <meta name="twitter:card" content="summary">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/icon-large.webp" media="(min-width:38rem)">
+            <img src="images/icon.webp" alt="Health and Wellbeing Directory Icon" width="40" height="40" loading="lazy">
+        </picture>
+
+        <div>
+            <h2>Health & Wellbeing</h2>
+        </div>
+        <button id="navButton" type="button" aria-label="Menu"></button>
+    </header>
+
+    <nav id="animation">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li class="active"><a href="nutrition.html">Nutrition</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="homeGrid">
+            <div id="hero">
+                <picture>
+                    <source srcset="images/food-large.jpg" media="(min-width:38rem)">
+                    <source srcset="images/food-medium.jpg" media="(min-width:28rem)">
+                    <img src="images/food-small.jpg" alt="Waikato river" loading="lazy" width="640" height="427">
+                </picture>
+                <h1>Nutrition</h1>
+            </div>
+
+            <div id="basics">
+                <source srcset="images/variety-large.jpg" media="(min-width:38rem)">
+                <source srcset="images/variety-medium.jpg" media="(min-width:28rem)">
+                <img src="images/variety-small.jpg" alt="" loading="lazy" width="640" height="427">
+                <h3>Purpose</h3>
+                <ul>So why is nutrition so important you may ask???<br>
+                    Nutrition plays a critical role in maintaining overall health and well-being. It is essential for
+                    several reasons:</ul>
+
+                <li>Prevention of Malnutrition and Diseases: A healthy diet helps prevent malnutrition in all its forms
+                    and protects against noncommunicable diseases (NCDs) such as obesity, heart disease, diabetes,
+                    cancer, and stroke. The shift towards diets high in energy, fats, free sugars, and salt/sodium has
+                    contributed to the prevalence of these conditions.</li><br>
+
+                <li>Improvement of Physical and Mental Health: Good nutrition enhances physical health by providing the
+                    body with essential nutrients needed for growth, repair, and maintenance of tissues. It also
+                    supports mental health; individuals who consume fresh fruits and vegetables daily report fewer
+                    mental health issues compared to those who consume unhealthy foods.</li><br>
+
+                <li>Economic Benefits: Poor nutrition can lead to significant healthcare costs due to diet-related
+                    illnesses. A healthier diet could potentially save billions in medical expenses related to coronary
+                    heart disease, stroke, cancer, diabetes, and other conditions.</li><br>
+
+                <li>Support for Growth and Development: For infants and young children, optimal nutrition is crucial for
+                    healthy growth and cognitive development. Breastfeeding exclusively during the first six months of
+                    life is recommended to ensure proper nutrition.</li><br>
+
+                <li>Weight Management: A balanced diet helps maintain a healthy weight by reducing the risk of unhealthy
+                    weight gain through controlled intake of saturated fats, trans-fats, sugars, and sodium while
+                    promoting consumption of dietary fiber from fruits, vegetables, legumes, nuts, and whole grains.
+                </li><br>
+
+                <li>Immune System Support: Adequate intake of vitamins (A, B, C, E) and minerals (zinc, iron, selenium)
+                    strengthens the immune system's ability to fight infections.</li><br>
+
+                <li>Bone Health: Diets rich in calcium support strong bones and teeth while slowing bone loss associated
+                    with aging. Vitamin D aids calcium absorption.</li><br>
+
+                <li>Heart Health: Consuming a diet rich in fruits, vegetables, whole grains, low-fat dairy products
+                    along with oily fish like salmon or trout provides omega-3 fatty acids beneficial for heart health
+                    by maintaining blood pressure and cholesterol levels.</li><br>
+
+
+            </div>
+
+            <div id="diet">
+                <source srcset="images/tracking-large.jpg" media="(min-width:38rem)">
+                <source srcset="images/tracking-medium.jpg" media="(min-width:28rem)">
+                <img src="images/tracking.jpg" alt="" loading="lazy" width="640" height="427">
+                <h3>Diet</h3>
+                <ul>With so many options available, diets vary to cater to different nutritional needs or
+                    preferences.<br>
+                    So what type of diets are available today???</ul>
+
+                <li>Balanced Diet: This includes a variety of foods from all food groups: fruits; vegetables; proteins
+                    such as meat or legumes; carbohydrates like whole grains; dairy products; fats including unsaturated
+                    oils; ensuring adequate intake without excess calories from sugars or unhealthy fats.</li><br>
+
+                <li>Mediterranean Diet: Emphasizes plant-based foods such as fruits/vegetables/nuts/legumes/whole grains
+                    along with olive oil as primary fat source while limiting red meat consumption but allowing moderate
+                    fish/poultry/dairy intake which provides cardiovascular benefits due to its high content in
+                    monounsaturated fats & omega-3 fatty acids found in fish.</li><br>
+
+                <li>Vegetarian/Vegan Diets: Focus on plant-derived foods excluding meat/fish/poultry (vegetarian) or all
+                    animal products including dairy/eggs/honey (vegan). These diets require careful planning to ensure
+                    sufficient protein/vitamin B12/iron/calcium intake often supplemented through fortified
+                    foods/supplements if necessary.</li><br>
+
+                <li>Low-Carbohydrate Diets (e.g., Keto): Restrict carbohydrate intake significantly while increasing
+                    fat/protein consumption aiming at inducing ketosis where body uses stored fat instead glucose for
+                    energy resulting potential weight loss though long-term effects remain debated among experts
+                    regarding sustainability/nutritional adequacy especially concerning micronutrients/fiber levels
+                    typically lower than recommended amounts found naturally occurring within carbohydrate-rich sources
+                    like fruits, grains, and legumes.</li><br>
+
+                <li>DASH Diet (Dietary Approaches Stop Hypertension): This diet is very nutrient rich and was designed
+                    specificall to manage hypertension, focusing primarily on reducing sodium, alongside increasing
+                    potassium, magnesium, and calcium through higher fruit, vegetable, and dairy product intake. This
+                    diet also combines lean meats, nuts and seeds to promote overall cardiovascular health to improve
+                    blood pressure regulation.</li><br>
+
+                <li>Paleo Diet: This diet is based on ancient human eating patterns emphasizing unprocessed natural
+                    foods similar to those in the Paleolithic era. This diet focuses on food groups such as lean meats,
+                    fish, fruits, vegetables, nuts, and seeds while avoiding processed items, grains, dairy products and
+                    processed sugar.</li>
+
+            </div>
+
+            <div id="macros">
+                <source srcset="images/macro-large.jpg" media="(min-width:38rem)">
+                <source srcset="images/macro-medium.jpg" media="(min-width:28rem)">
+                <img src="images/macro-small.jpg" alt="" loading="lazy" width="640" height="427">
+                <h3>Macros</h3>
+                <ul>So how does macronutrients and tracking my nutritional intake work???<br>
+                    Macronutrients include proteins, fats, and carbohydrates which are essential for the body's growth,
+                    development, and overall health.<br>
+                    They provide the energy necessary for various bodily functions and play a crucial role in weight
+                    management and muscle building...</ul>
+
+                <li>Proteins: Proteins are composed of amino acids that serve as the building blocks for muscle tissue.
+                    They are vital for muscle repair and growth, making them particularly important for those looking to
+                    gain muscle mass. Protein also influences appetite-regulating hormones and can increase satiety
+                    after meals, which is beneficial for weight loss.</li><br>
+
+                <li>Fats: Fats are a dense source of energy and are essential for hormone production, nutrient
+                    absorption, and cell structure maintenance. Healthy fats like monounsaturated and polyunsaturated
+                    fats can aid in weight management by regulating appetite and energy expenditure.</li><br>
+
+                <li>Carbohydrates: Carbohydrates are the body's primary source of energy. They break down into glucose,
+                    which fuels brain function and physical activity. While often criticized in weight loss contexts,
+                    carbohydrates are crucial for sustained energy levels during workouts.</li><br>
+
+                <ul>Macronutrients for Weight Loss or Muscle Gain</ul>
+
+                <li>Calorie Deficit for Weight Loss: The most critical factor in losing weight is maintaining a calorie
+                    deficit—burning more calories than consumed. While macronutrient ratios can vary based on personal
+                    preferences and health conditions, a general guideline is to consume 10-35% of calories from
+                    protein, 20-35% from fats, and 45-65% from carbohydrates.</li><br>
+
+                <li>Protein Intake: For those aiming to lose weight while preserving muscle mass or gaining muscle,
+                    protein intake should be around 1.2-2 grams per kilogram of body weight. This helps maintain muscle
+                    mass during calorie restriction.</li><br>
+
+                <li>Healthy Fats: Incorporate healthy fats such as those found in avocados, nuts, olive oil, and fatty
+                    fish like salmon to support metabolic processes without contributing to excess calorie intake.</li>
+
+                <li>Carbohydrate Management: Focus on complex carbohydrates like whole grains, fruits, vegetables, and
+                    legumes rather than refined carbs that can lead to spikes in blood sugar levels.</li><br>
+
+                <li>Individualized Approach: It's important to tailor macronutrient ratios based on individual factors
+                    such as age, activity level, metabolic rate, health conditions, and personal dietary preferences to
+                    ensure adherence to the diet plan.</li><br>
+
+                <li>Quality Over Quantity: Emphasize nutrient-dense foods that provide vitamins and minerals along with
+                    macronutrients rather than empty-calorie foods that offer little nutritional value.</li>
+
+                <li>Tracking Macros: Monitoring macronutrient intake can help individuals stay within their desired
+                    ranges while ensuring they meet their nutritional needs effectively.</li>
+            </div>
+        </div>
+
+        <div id="extra">
+            <div id="recipes">
+                <a href="https://youtu.be/pA3Q-KA4rDA?si=r4djMRAaRsYjgeL_">
+                    <img src="images/recipe.jpg" alt="hand reaching across cookbook on bench for vegetables"
+                        loading="lazy" width="640" height="426">
+                </a>
+                <h2>Recipes</h2>
+                <p>Eating healthy is a goal for many individuals, and having access to a variety of nutritious recipes
+                    can make this lifestyle choice easier and more enjoyable. Tap the image above to be redirected to
+                    some of our favourite recipes that cater to different dietary needs and preferences.</p>
+            </div>
+
+            <div id="macrocalculator">
+                <a href="https://blog.myfitnesspal.com/free-macro-calculator/">
+                    <img src="images/calculator.jpg" alt="picture of measuring tape on scales" loading="lazy"
+                        width="640" height="426">
+                </a>
+                <h2>Macro Calculator</h2>
+                <p>A macro calculator is a tool designed to help individuals determine the optimal proportion of
+                    macronutrients—proteins, carbohydrates, and fats—they should consume daily based on their specific
+                    health and fitness goals. These goals can include weight loss, muscle gain, or maintenance of
+                    current weight. </p>
+            </div>
+
+            <div id="mealplan">
+                <a
+                    href="https://www.anytimefitness.com/wp-content/uploads/2018/10/AF-21-Day-Transformation-Meal-Prep-Guide-and-Recipe-E-Book.pdf">
+                    <img src="images/prep.jpg" alt="meal prep containers of food on benchtop" loading="lazy" width="640"
+                        height="427">
+                </a>
+                <h2>Meal Plan</h2>
+                <p>A well-structured meal plan is essential for achieving fitness goals, whether it's building muscle,
+                    losing fat, or improving overall health.
+                    The focus should be on consuming a variety of nutrient-rich foods across different food groups while
+                    managing calorie intake based on individual needs.
+                    Click on the image above to access your free 21 day meal prep guide with recipes.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p><strong>Health & Wellbeing</strong></p>
+            <p>1080 London Street</p>
+            <p>Hamilton 3200</p>
+            <p>info@HAW.co.nz</p>
+            <p>0800 245 873</p>
+        </div>
+
+        <div>
+            <P>WDD231 Project</P>
+            <p>Te Ara Erueti</p>
+            <p>&copy; <span id="currentyear"></span> &clubs; Te Ara Erueti &clubs; Waikato, New Zealand</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

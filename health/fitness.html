@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Ara Erueti - Health Fitness Page</title>
+    <meta name="description"
+        content="Te Ara Erueti's Fitness Page WDD231- Web Frontend Development I week 6 assignment">
+    <meta name="author" content="Te Ara Erueti">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fitness.css">
+    <link rel="stylesheet" href="styles/fitness-large.css">
+
+
+    <script src="scripts/fitness.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="haw.ico">
+
+    <meta property="og:title" content="Health & Wellbeing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tearaerueti.github.io/wdd231/health/fitness.html">
+    <meta property="og:image" content="https://tearaerueti.github.io/wdd231/health/images/meta.jpg">
+    <meta property="og:description" content="Te Ara's fitness page for the Health & Wellbeing website.">
+    <meta name="twitter:card" content="summary">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/icon-large.webp" media="(min-width:38rem)">
+            <img src="images/icon.webp" alt="Health and Wellbeing Directory Icon" width="40" height="40" loading="lazy">
+        </picture>
+
+        <div>
+            <h2>Health & Wellbeing</h2>
+        </div>
+        <button id="navButton" type="button" aria-label="Menu"></button>
+    </header>
+
+    <nav id="animation">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="fitness.html">Fitness</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="hero">
+            <picture>
+                <source srcset="images/splank-large.jpg" media="(min-width:38rem)">
+                <source srcset="images/splank-medium.jpg" media="(min-width:28rem)">
+                <img src="images/splank-small.jpg" alt="Waikato river" loading="lazy" width="640" height="427">
+            </picture>
+            <h1>Fitness</h1>
+        </div>
+
+        <div id="toggleView">
+            <button id="gridView" type="button">
+                <img src="images/grid.png" alt="toggle to grid view" width="16" height="16" loading="lazy">
+            </button>
+            <button id="listView" type="button">
+                <img src="images/list.png" alt="toggle to list view" width="16" height="16" loading="lazy">
+            </button>
+        </div>
+
+        <div>
+            <article id="cards" class="grid">
+            </article>
+            <dialog id="ExerciseInfo"></dialog>
+        </div>
+
+        <div id="weather">
+
+            <div id="currentWeather">
+                <h3>Current Weather</h3>
+                <div id="weatherdiv">
+                    <div id="iconDiv"></div>
+                    <div id="textDiv"></div>
+                </div>
+            </div>
+
+            <div id="forecast">
+                <h3>Weather forecast</h3>
+            </div>
+
+            <div id="events">
+                <h3>Fitness Timetable</h3>
+                <h4>Outdoor training at 5:30pm weekdays at Hamilton Lake Reserve...</h4>
+                <ul>Monday: Boxing</ul>
+                <ul>Tuesday: Weighted Circuit</ul>
+                <ul>Wednesday: Yoga/ Pilates</ul>
+                <ul>Thursday: Weighted Circuit</ul>
+                <ul>Friday: EMOM/ HIIT</ul>
+            </div>
+        </div>
+
+
+        <div id="workouts">
+            <div id="weights">
+                <a href="https://youtu.be/pA3Q-KA4rDA?si=r4djMRAaRsYjgeL_">
+                    <img src="images/weights.jpg" alt="fit people doing weights" loading="lazy" width="640"
+                        height="427">
+                </a>
+                <h2>Weighted Workout</h2>
+                <p>This workout is designed to take your body through a range of weighted exercises to help build
+                    strength and tone your muscles.</p>
+            </div>
+
+            <div id="boxing">
+                <a href="https://youtu.be/Zx45s3kUrCc?si=h8y9Jpm_UgJwHoMa">
+                    <img src="images/boxing.jpg" alt="people doing boxing" loading="lazy" width="640" height="427">
+                </a>
+                <h2>Boxing Workout</h2>
+                <p>This is our most popular workout that takes you through a range of boxing moves to get your heart
+                    rate pumping and your body moving.</p>
+            </div>
+
+            <div id="yoga">
+                <a href="https://youtu.be/y87vSUoIMGU?si=1tytrQH33xe15cza">
+                    <img src="images/yoga.jpg" alt="people doing yoga" loading="lazy" width="640" height="427">
+                </a>
+                <h2>Yoga Workout</h2>
+                <p>This is our mixed yoga/pilates workout that helps target those smaller muscles and works on improving
+                    mindfulness with breath work and stretching.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p><strong>Health & Wellbeing</strong></p>
+            <p>1080 London Street</p>
+            <p>Hamilton 3200</p>
+            <p>info@HAW.co.nz</p>
+            <p>0800 245 873</p>
+        </div>
+
+        <div>
+            <P>WDD231 Project</P>
+            <p>Te Ara Erueti</p>
+            <p>&copy; <span id="currentyear"></span> &clubs; Te Ara Erueti &clubs; Waikato, New Zealand</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

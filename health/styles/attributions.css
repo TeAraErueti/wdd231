@@ -1,0 +1,165 @@
+:root {
+    --p-color: #41573f;
+    --s-color: #28b686f3;
+    --t-color: rgba(255, 255, 255, 0.932);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inter", "Open-Sans";
+}
+
+h1 {
+    display: block;
+}
+
+p,
+a {
+    font-family: "Inter", "Open-Sans";
+}
+
+body {
+    text-align: center;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+    background-color: var(--s-color);
+}
+
+header div p,
+header div h2 {
+    margin: 10px;
+}
+
+header img,
+header div {
+    margin-left: 10px;
+}
+
+nav {
+    background-color: var(--p-color);
+}
+
+#navButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--p-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
+}
+
+#navButton::before {
+    content: "\2630";
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--t-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+ul.menuLinks a:hover {
+    background-color: rgba(2, 2, 2, 0.849);
+}
+
+li.active a::before {
+    content: "📍";
+}
+
+ul.menuLinks {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#navButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+footer {
+    background-color: var(--p-color);
+    color: var(--t-color);
+    padding: 1rem;
+    margin: auto;
+    margin-top: 90px;
+}
+
+footer div {
+    margin-left: 2rem;
+}
+
+@media only screen and (min-width: 38rem) {
+    header {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    header div p,
+    header div h2 {
+        padding-bottom: 5px;
+        margin-left: 20px;
+    }
+
+    header img {
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+
+    header a {
+        font-weight: 700;
+        color: rgb(240, 248, 255);
+    }
+
+    #navButton {
+        display: none;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+        padding: 1rem;
+    }
+
+    footer {
+        display: grid;
+        align-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

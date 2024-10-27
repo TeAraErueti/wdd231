@@ -1,0 +1,180 @@
+:root {
+    --p-color: #41573f;
+    --s-color: #28b686f3;
+    --t-color: rgba(255, 255, 255, 0.932);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inter", "Open-Sans";
+}
+
+h1 {
+    display: block;
+}
+
+p,
+a {
+    font-family: "Inter", "Open-Sans";
+}
+
+body {
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+}
+
+#basics,
+#diet,
+#macros {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--p-color);
+    color: var(--t-color);
+    margin: 10px;
+    font-family: "inter", "open-sans";
+}
+
+#basics h3,
+#diet h3,
+#macros h3 {
+    background-color: var(--t-color);
+    color: var(--p-color);
+    font-weight: 900;
+    margin: auto;
+    padding: 1rem;
+}
+
+#basics ul,
+#diet ul,
+#macros ul {
+    font-weight: bold;
+
+}
+
+#basics li,
+#diet li,
+#macros li {
+    font-weight: 500;
+}
+
+
+
+#basics img,
+#diet img,
+#macros img {
+    width: 100%;
+    height: auto;
+}
+
+#extra {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#extra img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#extra p {
+    font-weight: 550;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+    background-color: var(--s-color);
+}
+
+header div p,
+header div h2 {
+    margin: 10px;
+}
+
+header img,
+header div {
+    margin-left: 10px;
+}
+
+nav {
+    background-color: var(--p-color);
+}
+
+#navButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--p-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
+}
+
+#navButton::before {
+    content: "\2630";
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--t-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+ul.menuLinks a:hover {
+    background-color: rgba(2, 2, 2, 0.849);
+}
+
+li.active a::before {
+    content: "📍";
+}
+
+ul.menuLinks {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#navButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+footer {
+    background-color: var(--p-color);
+    color: var(--t-color);
+    padding: 1rem;
+    margin: auto;
+    margin-top: 90px;
+}
+
+footer div {
+    margin-left: 2rem;
+}
